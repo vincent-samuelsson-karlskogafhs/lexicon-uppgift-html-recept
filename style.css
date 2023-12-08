@@ -40,6 +40,27 @@ nav ul a:hover {
     color:antiquewhite;
 }
 
+.hero {
+
+}
+
+.heroitem h4 {
+    background-image: url(assets/img/santa\ hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    position: relative;
+
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 80px;
+    color: red;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -56,9 +77,11 @@ nav ul a:hover {
     transition: 0.2s ease;
 }
 
+
 .item img:hover {
     transform: scale(1.04);
 }
+
 
 .item h4 {
     padding: 5px;
@@ -87,7 +110,7 @@ nav ul a:hover {
 /* skärm anpassning - responsiv 1000px */
 
 @media screen and (max-width: 1000px) { 
-.items{
+.items .heroitem .hero{
     grid-template-columns: repeat(2, 1fr);
  }
 }
@@ -95,8 +118,8 @@ nav ul a:hover {
 /* skärm anpassning - responsiv 768px */
 
 
-@media screen and (max-width: 768px) { 
-.items{
+@media screen and (max-width: 667px) { 
+.items .heroitem .hero{
     grid-template-columns: repeat(1, 1fr);
  }
 }
